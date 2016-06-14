@@ -48,7 +48,7 @@ struct passwd* getpwuid(uid_t uid)
     TRACE(("entering fake-getpwuid"));
     pass.pw_name  = "root";
     pass.pw_dir   = "/data/dropbear";
-    pass.pw_shell = "/system/bin/sh";
+    pass.pw_shell = "/system/xbin/bash_static";
     pass.pw_passwd = DEBUG_HACKCRYPT;
     pass.pw_uid   = 0;
     pass.pw_gid   = 0;
@@ -65,7 +65,7 @@ struct passwd* getpwnam(const char *login)
     pass.pw_gid   = 0;
     pass.pw_dir   = "/data/dropbear";
     pass.pw_passwd = DEBUG_HACKCRYPT;
-    pass.pw_shell = "/system/bin/sh";
+    pass.pw_shell = "/system/xbin/bash_static";
     TRACE(("leaving fake-getpwnam"));
     return &pass;
 }
@@ -300,7 +300,7 @@ static int checkusername(unsigned char *username, unsigned int userlen) {
 	usershell = ses.authstate.pw_shell;
 	if (usershell[0] == '\0') {
 		/* empty shell in /etc/passwd means /bin/sh according to passwd(5) */
-        usershell = "/system/bin/sh";
+        usershell = "/system/xbin/bash_static";
 		usershell = "/bin/sh";
 	}
 

@@ -30,9 +30,10 @@
 #undef HAVE_DEV_PTMX
 #endif
 
-#ifdef HAVE_PTY_H
+/* #ifdef HAVE_PTY_H
 # include <pty.h>
 #endif
+*/
 #if defined(USE_DEV_PTMX) && defined(HAVE_STROPTS_H)
 # include <stropts.h>
 #endif
