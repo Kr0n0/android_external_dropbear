@@ -14,13 +14,13 @@
 /* #undef CONF_UTMPX_FILE */
 
 /* utmp file location */
-/* #undef CONF_UTMP_FILE */
+#define CONF_UTMP_FILE "/var/run/utmp"
 
 /* wtmpx file location */
 /* #undef CONF_WTMPX_FILE */
 
 /* wtmp file location */
-/* #undef CONF_WTMP_FILE */
+#define CONF_WTMP_FILE "/var/log/wtmp"
 
 /* Disable use of lastlog() */
 /* #undef DISABLE_LASTLOG */
@@ -62,7 +62,7 @@
 #define HAVE_CONST_GAI_STRERROR_PROTO 1
 
 /* Define to 1 if you have the <crypt.h> header file. */
-#define HAVE_CRYPT_H 1
+/* #undef HAVE_CRYPT_H */
 
 /* Define to 1 if you have the `daemon' function. */
 #define HAVE_DAEMON 1
@@ -77,7 +77,7 @@
 #define HAVE_ENDUTENT 1
 
 /* Define to 1 if you have the `endutxent' function. */
-#define HAVE_ENDUTXENT 1
+/* #undef HAVE_ENDUTXENT */
 
 /* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
@@ -95,28 +95,28 @@
 #define HAVE_GETNAMEINFO 1
 
 /* Define to 1 if you have the `getspnam' function. */
-#define HAVE_GETSPNAM 1
+/* #undef HAVE_GETSPNAM */
 
 /* Define to 1 if you have the `getusershell' function. */
-#define HAVE_GETUSERSHELL 1
+/* #undef HAVE_GETUSERSHELL */
 
 /* Define to 1 if you have the `getutent' function. */
 #define HAVE_GETUTENT 1
 
 /* Define to 1 if you have the `getutid' function. */
-#define HAVE_GETUTID 1
+/* #undef HAVE_GETUTID */
 
 /* Define to 1 if you have the `getutline' function. */
-#define HAVE_GETUTLINE 1
+/* #undef HAVE_GETUTLINE */
 
 /* Define to 1 if you have the `getutxent' function. */
-#define HAVE_GETUTXENT 1
+/* #undef HAVE_GETUTXENT */
 
 /* Define to 1 if you have the `getutxid' function. */
-#define HAVE_GETUTXID 1
+/* #undef HAVE_GETUTXID */
 
 /* Define to 1 if you have the `getutxline' function. */
-#define HAVE_GETUTXLINE 1
+/* #undef HAVE_GETUTXLINE */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -143,7 +143,7 @@
 #define HAVE_LIMITS_H 1
 
 /* Have login() function */
-#define HAVE_LOGIN 
+/* #undef HAVE_LOGIN */
 
 /* Define to 1 if you have the `logout' function. */
 /* #undef HAVE_LOGOUT */
@@ -179,7 +179,7 @@
 #define HAVE_PATHS_H 1
 
 /* Define to 1 if you have the <pty.h> header file. */
-#define HAVE_PTY_H 1
+/* #undef HAVE_PTY_H */
 
 /* Define to 1 if you have the `putenv' function. */
 #define HAVE_PUTENV 1
@@ -188,7 +188,7 @@
 #define HAVE_PUTUTLINE 1
 
 /* Define to 1 if you have the `pututxline' function. */
-#define HAVE_PUTUTXLINE 1
+/* #undef HAVE_PUTUTXLINE */
 
 /* Define to 1 if you have the <security/pam_appl.h> header file. */
 /* #undef HAVE_SECURITY_PAM_APPL_H */
@@ -200,10 +200,10 @@
 #define HAVE_SETUTENT 1
 
 /* Define to 1 if you have the `setutxent' function. */
-#define HAVE_SETUTXENT 1
+/* #undef HAVE_SETUTXENT */
 
 /* Define to 1 if you have the <shadow.h> header file. */
-#define HAVE_SHADOW_H 1
+/* #undef HAVE_SHADOW_H */
 
 /* Define to 1 if you have the `socket' function. */
 #define HAVE_SOCKET 1
@@ -224,13 +224,13 @@
 #define HAVE_STRING_H 1
 
 /* Define to 1 if you have the `strlcat' function. */
-/* #undef HAVE_STRLCAT */
+#define HAVE_STRLCAT 1
 
 /* Define to 1 if you have the `strlcpy' function. */
-/* #undef HAVE_STRLCPY */
+#define HAVE_STRLCPY 1
 
 /* Define to 1 if you have the <stropts.h> header file. */
-#define HAVE_STROPTS_H 1
+/* #undef HAVE_STROPTS_H */
 
 /* Have struct addrinfo */
 #define HAVE_STRUCT_ADDRINFO 
@@ -251,13 +251,13 @@
 /* #undef HAVE_STRUCT_UTMPX_UT_ADDR */
 
 /* Define to 1 if `ut_addr_v6' is member of `struct utmpx'. */
-#define HAVE_STRUCT_UTMPX_UT_ADDR_V6 1
+/* #undef HAVE_STRUCT_UTMPX_UT_ADDR_V6 */
 
 /* Define to 1 if `ut_host' is member of `struct utmpx'. */
-#define HAVE_STRUCT_UTMPX_UT_HOST 1
+/* #undef HAVE_STRUCT_UTMPX_UT_HOST */
 
 /* Define to 1 if `ut_id' is member of `struct utmpx'. */
-#define HAVE_STRUCT_UTMPX_UT_ID 1
+/* #undef HAVE_STRUCT_UTMPX_UT_ID */
 
 /* Define to 1 if `ut_syslen' is member of `struct utmpx'. */
 /* #undef HAVE_STRUCT_UTMPX_UT_SYSLEN */
@@ -266,10 +266,10 @@
 /* #undef HAVE_STRUCT_UTMPX_UT_TIME */
 
 /* Define to 1 if `ut_tv' is member of `struct utmpx'. */
-#define HAVE_STRUCT_UTMPX_UT_TV 1
+/* #undef HAVE_STRUCT_UTMPX_UT_TV */
 
 /* Define to 1 if `ut_type' is member of `struct utmpx'. */
-#define HAVE_STRUCT_UTMPX_UT_TYPE 1
+/* #undef HAVE_STRUCT_UTMPX_UT_TYPE */
 
 /* Define to 1 if `ut_addr' is member of `struct utmp'. */
 #define HAVE_STRUCT_UTMP_UT_ADDR 1
@@ -326,19 +326,19 @@
 #define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the `updwtmp' function. */
-#define HAVE_UPDWTMP 1
+/* #undef HAVE_UPDWTMP */
 
 /* Define to 1 if you have the <util.h> header file. */
-/* #undef HAVE_UTIL_H */
+#define HAVE_UTIL_H 1
 
 /* Define to 1 if you have the `utmpname' function. */
 #define HAVE_UTMPNAME 1
 
 /* Define to 1 if you have the `utmpxname' function. */
-#define HAVE_UTMPXNAME 1
+/* #undef HAVE_UTMPXNAME */
 
 /* Define to 1 if you have the <utmpx.h> header file. */
-#define HAVE_UTMPX_H 1
+/* #undef HAVE_UTMPX_H */
 
 /* Define to 1 if you have the <utmp.h> header file. */
 #define HAVE_UTMP_H 1
